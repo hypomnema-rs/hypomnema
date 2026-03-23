@@ -24,6 +24,7 @@ No admin panels. No databases. No JavaScript frameworks. Just your editor, your 
 - 🔒 **Git-friendly** - Version control your content naturally
 
 ## Installation
+
 ```bash
 # From source (requires Rust)
 cargo install hypomnema
@@ -33,6 +34,7 @@ cargo install hypomnema
 ```
 
 ## Quick Start
+
 ```bash
 # Create a directory for your content
 mkdir my-blog && cd my-blog
@@ -63,6 +65,7 @@ hypomnema serve
 ## Configuration
 
 Create a `config.toml` in your project root:
+
 ```toml
 title = "My Blog"
 base_url = "https://example.com"
@@ -73,6 +76,7 @@ content_dir = "./content"
 That's it. No complex configuration files, no environment variables, no magic.
 
 ## Content Structure
+
 ```
 my-blog/
 ├── content/
@@ -92,21 +96,22 @@ my-blog/
 ```
 
 ## Frontmatter
+
 ```yaml
 ---
 title: "Post Title"
 date: 2025-01-15
-slug: custom-slug      # optional, defaults to filename
-draft: false           # optional, defaults to false
-tags: [rust, cms]      # optional
+slug: custom-slug # optional, defaults to filename
+draft: false # optional, defaults to false
+tags: [rust, cms] # optional
 ---
-
 Your markdown content here...
 ```
 
 ## Deployment
 
 ### With Git
+
 ```bash
 # On your server
 git clone git@github.com:you/blog-content.git
@@ -119,6 +124,7 @@ git pull
 ```
 
 ### With systemd
+
 ```ini
 [Unit]
 Description=Hypomnema Blog
@@ -159,6 +165,7 @@ If you need these, use Ghost, WordPress, or another CMS. Hypomnema is intentiona
 ## Roadmap
 
 ### v0.1 (MVP) - Current
+
 - [ ] Basic markdown rendering
 - [ ] Frontmatter parsing
 - [ ] File watcher
@@ -167,12 +174,14 @@ If you need these, use Ghost, WordPress, or another CMS. Hypomnema is intentiona
 - [ ] Tag pages
 
 ### v0.2
+
 - [ ] Syntax highlighting
 - [ ] Search
 - [ ] Table of contents
 - [ ] Related posts
 
 ### Not Planned
+
 See "Anti-Features" above.
 
 ## Contributing
@@ -195,8 +204,8 @@ Open an issue to discuss features before submitting PRs.
 
 Hypomnema is dual-licensed under either:
 
-* MIT License ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
-* Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
+- MIT License ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
+- Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
 
 at your option.
 
